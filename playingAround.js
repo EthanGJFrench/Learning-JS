@@ -5,28 +5,29 @@
 var drive = prompt('How many years have you been driving for?');
 
 // Converting visitorAge variable to an Int. Saving value to driveAwnser 
-var driveAwnser = parseInt(drive * 365);
+var driveAwnser = parseInt(drive) * 365;
 
 // Changing back to string(for fun/demonstration)
-var awnserString = String(driveAwnser); 
+var awnserString = String(driveAwnser);
 
 // Writing string onto webpage and combining the awnserString
 document.write('If you have been driving for ' + drive + ' ammount of years, you have been driving for ' + awnserString
-+ ' days!');
+    + ' days!');
 
 // Asking user if informantion is true
-var info = prompt('Is this information you have entered correct? (y/n)');
+var infoCheak = prompt('Is this information you have entered correct? (Type y/n)');
 
 // Executing command if infoCheak = true (is = 'y') 
-if (info = 'y') {
+if (infoCheak = 'y') {
 
-    info = true;
-
+    infoCheak == true;
 }
 
-// Executing command if infoCheak is not = 'y'
-if(info = true) {
+if (infoCheak == true) {
 
-    console.log('The informantion you have given is incorect. Please referesh the page to try again.');
+    console.log('Thankyou for this accurate information');
 
+} else {
+
+    console.log('Please refresh this page to retake this Quiz');
 }
