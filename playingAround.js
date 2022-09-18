@@ -14,20 +14,8 @@ var awnserString = String(driveAwnser);
 document.write('If you have been driving for ' + drive + ' ammount of years, you have been driving for ' + awnserString
     + ' days!');
 
-// Asking user if informantion is true
-var infoCheak = prompt('Is this information you have entered correct? (Type y/n)');
-
-// Executing command if infoCheak = true (is = 'y') 
-if (infoCheak = 'y') {
-
-    infoCheak == true;
-}
-
-if (infoCheak == true) {
-
+if (prompt('Is this information you have entered correct? (Type y/n)') == 'y') {
     console.log('Thankyou for this accurate information');
-
 } else {
-
-    console.log('Please refresh this page to retake this Quiz');
+    console.log('This information is incorrect. Please refresh this page to retake this Quiz');
 }
